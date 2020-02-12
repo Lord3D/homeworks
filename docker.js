@@ -38,7 +38,10 @@ scor.src = "sounds/score.mp3";
 
 // on key down
 
-document.addEventListener("keydown",moveUp);
+//document.addEventListener("keydown",moveUp);
+//document.addEventListener("touchstart",moveUp);
+document.addEventListener("click",moveUp);
+
 
 function moveUp(){
     bY -= 25;
