@@ -1,0 +1,11 @@
+Host slave1
+	Hostname 95.163.181.157
+	User root
+
+Host slave2
+	Hostname 95.163.181.169
+	User root
+
+Host slave3
+	Hostname 95.163.180.208
+	User root
