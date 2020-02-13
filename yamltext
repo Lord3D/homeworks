@@ -1,0 +1,10 @@
+---
+- company: dream#mechta
+  structura:
+    otdels: [perviy, vtoroy, tretiy, chetvertiy, pyatiy, shestoy]
+    vakansii: [buhgalter, stroitel, yurist, bumagi, director]
+  cheloveki:
+    imya: dmitriy
+    otdel: tretiy
+    vakansia: stroitel
+    vozrast: 33
