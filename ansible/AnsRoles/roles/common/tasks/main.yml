@@ -1,0 +1,9 @@
+---
+# tasks file for common
+- name: Install Soft
+  apt: name={{item}} state=present
+  with_items:
+   - mc
+   - iotop
+   - htop
+   - curl
