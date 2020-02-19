@@ -1,0 +1,22 @@
+---
+- hosts: slaves
+  become: yes
+  tasks:
+ 
+  - name: Add user 
+    user: name=slave groups=sudo shell=/bin/bash password=$6$KjyfytoJ$hoQdVIGcRZgje2HpHFf8ldvooLfY774SrEpHkADUf3d7uGBSwVLeMXsPIfb4l2TaXWvprMz868ZbH8HLaiDeh.
+ 
+  - name: Ustanovka Nginx
+    apt:
+      name=nginx
+      state=latest
+
+
+  - name: Copy Hello World
+    copy:
+      src="HelloWorld.html" dest="/tmp/HelloWorld.html"
+
+  - name: Remove nginx
+    apt:
+      name: nginx
+      state: absent

@@ -1,0 +1,7 @@
+---
+- hosts: slaves
+  become: yes
+  tasks:
+ 
+  - name: processorspus 
+    ansible_processor_vcpus

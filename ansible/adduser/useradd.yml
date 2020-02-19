@@ -1,0 +1,8 @@
+---
+- hosts: slaves
+  become: yes
+  tasks:
+ 
+  - name: Add user 
+    user: name=slave groups=sudo shell=/bin/bash password=$6$KjyfytoJ$hoQdVIGcRZgje2HpHFf8ldvooLfY774SrEpHkADUf3d7uGBSwVLeMXsPIfb4l2TaXWvprMz868ZbH8HLaiDeh.
+ 

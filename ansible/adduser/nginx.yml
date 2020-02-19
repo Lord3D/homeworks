@@ -1,0 +1,5 @@
+---
+- name: Ustanovka Nginx
+  apt:
+    name=nginx
+    state=latest
