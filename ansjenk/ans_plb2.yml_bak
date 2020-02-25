@@ -1,0 +1,15 @@
+---
+- hosts: slaves
+  tasks:
+
+  - name: установки
+    apt:
+      name: tomcat8
+      update_cache: yes
+      state: present
+
+  - name: установки
+    apt:
+      name: tomcat8-admin
+      update_cache: yes
+      state: present
