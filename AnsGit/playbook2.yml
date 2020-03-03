@@ -6,5 +6,5 @@
        - name: Download the NodeJS code from the GitRepo
          become: yes
          git:
-            repo: https://github.com/Lord3D/homeworks.git
+            repo: https://github.com/Lord3D/homeworks/tree/master/ansible/AnsRoles/roles/webserver/files.git
             dest: /tmp/temporata/
